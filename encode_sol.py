@@ -29,13 +29,13 @@ def main():
     j = count % n
     lsb = data[i, j, 2] % 2
     if(lsb == 0 and digit == 0):
-      # What do we put here?
+      pass
     elif(lsb == 0 and digit == 1):
-      # What do we put here?
+      data[i, j, 2] += 1
     elif(lsb == 1 and digit == 0):
-      # What do we put here?
+      data[i, j, 2] -= 1
     elif(lsb == 1 and digit == 1):
-      # What do we put here?
+      pass
 
   # Save the image
   result = Image.fromarray(data.astype(np.uint8))
