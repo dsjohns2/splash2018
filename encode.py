@@ -8,7 +8,7 @@ def main():
   data = np.asarray( img, dtype="int32" )
 
   # Get the message in binary
-  message = "this is my test and i am testing it"
+  message = "test"
   message_len = str(len(message))
   while(len(message_len) < 4):
     message_len = "0" + message_len
